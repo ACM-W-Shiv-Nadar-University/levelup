@@ -29,11 +29,9 @@ export default function Dashboard() {
       if (user) {
         setUser(user);
         try {
-          // Create or get user profile
           const profile = await createUserProfile(user);
           setUserProfile(profile);
           
-          // Get user rank
           const rank = await getUserRank(user.uid);
           setUserRank(rank);
         } catch (error) {
@@ -69,7 +67,7 @@ export default function Dashboard() {
           submissions: result.submissions
         }));
         
-        // Close modal and reset form
+       
         setSubmissionModal(null);
         setSubmissionLink('');
         
@@ -196,11 +194,11 @@ export default function Dashboard() {
   ];
 
   const getChallengeStatus = (challengeId) => {
-    // Check if there's a submission for this challenge
+   
     const submission = userProfile.submissions?.find(sub => sub.challengeId === challengeId);
     
     if (submission) {
-      return submission.status; // 'submitted', 'in-review', 'accepted', 'rejected'
+      return submission.status; 
     }
     
     if (userProfile.completedChallenges?.includes(challengeId)) {
@@ -365,7 +363,7 @@ export default function Dashboard() {
             </div>
           </div>
           <p className="text-sm text-gray-400 mt-2">
-            You've earned {userProfile.points || 0} points out of {challenges.reduce((sum, c) => sum + c.points, 0)} total points available!
+            You&apos;ve earned {userProfile.points || 0} points out of {challenges.reduce((sum, c) => sum + c.points, 0)} total points available!
           </p>
         </div>
 
@@ -520,7 +518,7 @@ export default function Dashboard() {
         </div>
       </div>
 
-      {/* Submission Modal */}
+      {/* submit option */}
       {submissionModal && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
           <div className="bg-gray-800 rounded-xl p-6 max-w-md w-full border border-gray-700">

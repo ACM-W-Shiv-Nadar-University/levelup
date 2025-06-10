@@ -208,7 +208,7 @@ export default function AboutPage() {
               <div className="md:col-span-2">
                 <h3 className="text-2xl font-bold text-purple-400 mb-4">Pragunie Aditya</h3>
                 <p className="text-gray-300 mb-4 leading-relaxed">
-                  Hi! I'm Pragunie Aditya(Secretary ACM-W), the techie behind this website. As a passionate developer and advocate for 
+                 Hi! I&apos;m Pragunie Aditya(Secretary ACM-W), the techie behind this website. As a passionate developer and advocate for 
                   inclusive tech education, I built this platform to bridge the gap between learning and doing 
                   in web development.
                 </p>
@@ -216,7 +216,7 @@ export default function AboutPage() {
                   My journey in tech has taught me that the best way to learn programming is by building real projects. 
                   This website is built to give developers a structured path 
                   from beginner to advanced through hands-on experience.
-                  Would love to connect with y'all!
+                  Would love to connect with y&apos;all!
                 </p>
                 
                 <div className="space-y-3">
@@ -251,9 +251,7 @@ export default function AboutPage() {
           <div className="bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl p-12 text-white">
             <h2 className="text-3xl font-bold mb-6">Our Mission</h2>
             <p className="text-xl opacity-90 max-w-3xl mx-auto leading-relaxed">
-              "To create an inclusive, supportive environment where developers of all backgrounds can 
-              learn, grow, and build amazing things together. Through progressive challenges and community 
-              support, we're building the next generation of tech leaders."
+              &quot;To create an inclusive, supportive environment where developers of all backgrounds can learn, grow, and build amazing things together. Through progressive challenges and community support, we&apos;re building the next generation of tech leaders.&quot;
             </p>
             <div className="mt-8">
               <Link 
