@@ -9,6 +9,14 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  // Add this to handle Firebase during build
+  experimental: {
+    serverComponentsExternalPackages: ['firebase-admin'],
+  },
+  // Disable static optimization for pages that use Firebase
+  generateBuildId: async () => {
+    return 'build-' + Date.now();
+  },
 }
 
 module.exports = nextConfig

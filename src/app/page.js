@@ -20,19 +20,32 @@ export default function HomePage() {
     return () => unsubscribe();
   }, []);
 
+  
   const handleGoogleSignIn = async () => {
+    console.log('Google sign in button clicked');
     try {
+      if (!auth) {
+        throw new Error('Firebase not initialized');
+      }
       await signInWithGoogle();
+      console.log('Google sign in completed');
     } catch (error) {
       console.error('Sign in failed:', error);
+      alert('Sign in failed: ' + (error.message || 'Unknown error'));
     }
   };
 
   const handleGithubSignIn = async () => {
+    console.log('GitHub sign in button clicked');
     try {
+      if (!auth) {
+        throw new Error('Firebase not initialized');
+      }
       await signInWithGithub();
+      console.log('GitHub sign in completed');
     } catch (error) {
       console.error('Sign in failed:', error);
+      alert('Sign in failed: ' + (error.message || 'Unknown error'));
     }
   };
 
