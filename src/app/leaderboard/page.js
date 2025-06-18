@@ -26,15 +26,14 @@ export default function Leaderboard() {
     },
     { 
       rank: 2, 
-      name: "Sarah Kim", 
-      points: 2640, 
-      level: "Frontend Specialist", 
-      projects: 10,
-      avatar: "SK",
-      streak: 32,
+      name: "Gauri Sunil", 
+      points: 100, 
+      level: "Frontend", 
+      projects: 1,
+      avatar: "GS",
+      streak: 1,
       category: "frontend",
-      institution: "Stanford",
-      github: "sarah-frontend"
+      institution: "SNU",
     },
     { 
       rank: 3, 
