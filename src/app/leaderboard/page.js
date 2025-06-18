@@ -15,15 +15,14 @@ export default function Leaderboard() {
   const leaderboardData = [
     { 
       rank: 1, 
-      name: "Alex Chen", 
-      points: 2850, 
-      level: "Full-Stack Developer", 
-      projects: 12,
-      avatar: "AC",
-      streak: 45,
-      category: "fullstack",
-      institution: "MIT",
-      github: "alexchen-dev"
+      name: "Shree Gattani", 
+      points: 100, 
+      level: "Frontend", 
+      projects: 1,
+      avatar: "SG",
+      streak: 1,
+      category: "frontend",
+      institution: "SNU",
     },
     { 
       rank: 2, 
