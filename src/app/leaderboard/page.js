@@ -48,7 +48,7 @@ export default function Leaderboard() {
     },
     { 
       rank: 4, 
-      name: "Diya Girdhir", 
+      name: "Diya Budlakoti", 
       points: 92, 
       level: "Frontend", 
       projects: 1,
